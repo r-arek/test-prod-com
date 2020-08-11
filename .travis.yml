@@ -3,8 +3,8 @@ dist: focal
 group: edge
 virt: vm
 arch: arm64-graviton2
-language: python
+language: c
 
 script:
-  - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+  - return 0
 
