@@ -4,5 +4,5 @@ group: edge
 virt: lxd
 arch: arm64-graviton2
 script:
-  - return 0
+  - uname -a
 
