@@ -1,7 +1,7 @@
 os: linux
 dist: focal
 group: edge
-virt: vm
+virt: lxd
 arch: arm64-graviton2
 compiler: clang
 script:
