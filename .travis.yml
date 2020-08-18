@@ -7,7 +7,8 @@ compiler: clang
 script:
   - git clone https://github.com/llvm/llvm-project.git
   - cd llvm-project
-  - cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
+  - ls -la
+  - cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" .
   - make
 
 
