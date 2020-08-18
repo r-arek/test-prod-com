@@ -5,10 +5,5 @@ virt: lxd
 arch: arm64-graviton2
 compiler: clang
 script:
-  - git clone https://github.com/llvm/llvm-project.git
-  - cd llvm-project
-  - ls -la
-  - cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" .
-  - make
-
+  - clang --version
 
