@@ -2,6 +2,12 @@ os: linux
 dist: focal
 arch: amd64
 virt: lxd
+
+services:
+  - docker
+env:
 script:
-  - systemd-detect-virt
+  - docker ps
+  - docker pull nginx
+  - docker run -it nginx /bin/sh
 
