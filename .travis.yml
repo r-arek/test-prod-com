@@ -1,7 +1,6 @@
 os: linux
 dist: focal
 virt: lxd
-compiler: clang
 script:
-  - clang --version
+  - systemd-detect-virt
 
