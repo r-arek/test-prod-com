@@ -9,5 +9,7 @@ env:
 script:
   - docker ps
   - docker pull nginx
-  - docker run -it nginx /bin/sh
+  - git clone https://github.com/kstaken/dockerfile-examples.git
+  - cd dockerfile-examples/apache
+  - docker build . -t apache
 
