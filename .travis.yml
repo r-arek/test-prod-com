@@ -3,9 +3,8 @@ addons:
   apt:
     sources:
       - sourceline: 'deb https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/4.4 multiverse'
-    packages:
-      - mongodb-org
 before_install: 
-  - apt-get -y remove mongodb*
+  - apt -y remove mongodb*
   - wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add -
+  - apt -y install mongodb-org
 script: mongod --version
