@@ -1,7 +1,2 @@
-os: linux
 dist: focal
-arch: amd64
-virt: lxd
-script:
-  - systemd-detect-virt
-
+script: mongod --version
