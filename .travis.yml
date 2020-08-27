@@ -4,13 +4,13 @@ arch: arm64-graviton2
 virt: vm
 jobs:
   include:
-    - script: echo "test1"
-    - script: echo "test2"
-    - script: echo "test3"
-    - script: echo "test4"
-    - script: echo "test5"
-    - script: echo "test6"
-    - script: echo "test7"
-    - script: echo "test8"
-    - script: echo "test9"
-    - script: echo "test10"
+    - script: return 1
+    - script: return 2
+    - script: return 3
+    - script: return 4
+    - script: return 5
+    - script: return 6
+    - script: return 7
+    - script: return 8
+    - script: return 9
+    - script: return 10
