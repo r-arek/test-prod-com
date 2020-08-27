@@ -1,4 +1,4 @@
 dist: focal
 services:
   - postgresql
-script: psql -c "SELECT rolname FROM pg_roles;" -U travis
+script: psql -c "SELECT rolname FROM pg_roles;" -U postgres
