@@ -1,10 +1,8 @@
 dist: focal
-addons:
-  apt:
-    sources:
-      - sourceline: 'deb https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/4.4 multiverse'
-before_install: 
-  - sudo apt -y remove mongodb
-  - wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
-  - sudo apt -y install mongodb-org
-script: mongod --version
+group: edge
+arch: arm64-graviton2
+virt: vm
+jobs:
+  include:
+    - script: echo "test1"
+    - script: echo "test2"
