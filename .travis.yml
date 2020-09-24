@@ -1,6 +1,6 @@
 dist: bionic
 jobs:
   include:
-    - script: return 1
-    - script: return 2
+    - script: return 0
+    - script: return 9
 
