@@ -1,5 +1,4 @@
-dist: bionic
+os: windows
 jobs:
   include:
-    - script: return 0
-    - script: return 9
+    - script: echo "test"
