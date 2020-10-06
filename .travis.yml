@@ -1,7 +1,7 @@
-language: generic
-jobs:
-  include:
-    - name: "Linux / clang / x86_64"
-      os: linux
-      compiler: clang
-
+arch:
+  - amd64
+  - ppc64le
+  - s390x
+  - arm64
+script:
+  - return 0
