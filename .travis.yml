@@ -1,4 +1,6 @@
+dist: focal
 arch: arm64-graviton2
 virt: lxd
-script:
+group: edge
+script: 
   - return 0
