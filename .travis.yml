@@ -1,6 +1,16 @@
-dist: focal
-arch: arm64-graviton2
-virt: lxd
-group: edge
-script: 
-  - return 0
+dist: xenial
+language: python
+python:
+  - 2.7
+
+services:
+  - xvfb
+
+script:
+  - ls -la
+
+cache:
+  directories:
+    - ./cache
+
+
