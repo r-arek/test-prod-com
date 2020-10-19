@@ -1,4 +1,7 @@
-dist: bionic
+dist: focal
+group: edge
+arch: arm64-graviton2
+virt: lxd
 
 script:
   - return 0
