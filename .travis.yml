@@ -3,15 +3,5 @@ group: edge
 arch: arm64-graviton2
 virt: lxd
 
-jobs:
-  include:
-    - script: return 0
-    - script: return 0
-    - script: return 0
-    - script: return 0
-    - script: return 0
-    - script: return 0
-    - script: return 0
-    - script: return 0
-    - script: return 0
-    - script: return 0
+script: 
+  - return 0
