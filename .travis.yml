@@ -1,5 +1,3 @@
 dist: focal
-group: dev
-language: rust
 script:
   - lsb_release -a
