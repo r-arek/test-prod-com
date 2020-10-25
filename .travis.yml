@@ -1,4 +1,6 @@
+arch: arm64-graviton2
 dist: focal
-language: rust
+group: edge
+virt: vm
 script:
-  - lsb_release -a
+  - ping 10.67.30.218
