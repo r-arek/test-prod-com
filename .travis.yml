@@ -1,6 +1,8 @@
-arch: arm64-graviton2
-dist: focal
-group: edge
-virt: vm
+arch:
+  - amd64
+  - ppc64le
+  - s390x
+  - arm64
+os: linux  
 script:
-  - ping 10.67.30.218
+  - return 0
