@@ -9,5 +9,5 @@ jdk:
   - openjdk11
   - openkdk12
 script:
-  - return 0
+  - java -version
 
