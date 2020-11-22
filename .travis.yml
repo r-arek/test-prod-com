@@ -5,4 +5,5 @@ services:
 before_script:
   - curl -X PUT localhost:5984/support_debug
 script:
+  - sudo systemctl status couchdb
   - curl localhost:5984/support_debug
