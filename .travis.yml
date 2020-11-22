@@ -3,8 +3,9 @@ language: java
 services:
   - couchdb
 script:
-  - sudo chown -R couchdb:couchdb /opt/couchdb
-  - ls -la /opt/couchdb
+  - sudo chown -R couchdb:couchdb /opt/couchdb 
+  - sudo ls -la /opt/couchdb
+  - sudo ls -la /var/run/couchdb
   - sudo ls -la /var/lib/couchdb
   - sudo ls -ls /var/log/couchdb
   - sudo ls -la /home
