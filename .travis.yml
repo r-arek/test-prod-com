@@ -1,13 +1,8 @@
-os: linux  
 dist: bionic
 language: java
-jdk:
-  - openjdk7
-  - openjdk8
-  - openjdk9
-  - openjdk10
-  - openjdk11
-  - openkdk12
+services:
+  - couchdb
+before_script:
+  - curl -X PUT localhost:5984/support_debug
 script:
-  - java -version
-
+  - curl localhost:5984/support_debug
