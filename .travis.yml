@@ -3,6 +3,4 @@ language: java
 services:
   - couchdb
 script:
-  - find / | grep couchdb
-  - sudo systemctl restart couchdb
-  - sudo journalctl -u couchdb
+  - ls -la /opt/couchdb
