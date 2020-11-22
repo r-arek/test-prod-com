@@ -5,6 +5,7 @@ services:
 script:
   - sudo chown -R couchdb:couchdb /opt/couchdb
   - ls -la /opt/couchdb
+  - ls -la /var/lib/couchdb
   - sudo systemctl restart couchdb
   - sudo systemctl status couchdb
   - sudo journalctl -u couchdb
