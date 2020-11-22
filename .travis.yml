@@ -3,8 +3,6 @@ language: java
 services:
   - couchdb
 script:
-  - sudo systemctl status couchdb
-  - sudo journalctl -u couchdb
-  - sleep 300
-  - sudo systemctl status couchdb
+  - find / | grep couchdb
+  - sudo systemctl restart couchdb
   - sudo journalctl -u couchdb
