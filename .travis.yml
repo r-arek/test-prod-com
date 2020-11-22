@@ -5,4 +5,4 @@ services:
 script:
   - sudo systemctl status couchdb
   - sudo journalctl -u couchdb
-  - find / | grep "erl_crash.dump"
+  - sudo find / | grep "erl_crash.dump"
