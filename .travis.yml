@@ -7,3 +7,4 @@ script:
   - ls -la /opt/couchdb
   - sudo ls -la /var/lib/couchdb
   - sudo ls -ls /var/log/couchdb
+  - sudo ls -la /home
