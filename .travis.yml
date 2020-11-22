@@ -4,4 +4,5 @@ services:
   - couchdb
 script:
   - sudo systemctl status couchdb
+  - sudo journalctl -u couchdb
   - curl localhost:5984/support_debug
