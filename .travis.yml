@@ -1,13 +1,5 @@
 dist: bionic
-language: java
-services:
-  - couchdb
+arch: arm64
+
 script:
-  - sudo systemctl stop couchdb
-  - sudo chown -R couchdb:couchdb /etc/couchdb /var/lib/couchdb /var/run/couchdb /var/log/couchdb
-  - sudo chmod -R 770 /etc/couchdb /var/lib/couchdb /var/run/couchdb /var/log/couchdb
-  - sudo find /etc/couchdb /var/lib/couchdb /var/run/couchdb /var/log/couchdb -type f | sudo xargs chmod 660
-  - sudo systemctl start couchdb
-  - sleep 60
-  - sudo systemctl status couchdb
-  - sudo journalctl -u couchdb
+  - return 0
