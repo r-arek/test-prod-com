@@ -1,5 +1,35 @@
 os: linux
 arch: amd64
 virt: lxd
-script:
-  - echo "test"
+jobs:
+  include:
+    - stage: test1
+      script: echo "1" && sleep 120
+    - stage: test2
+      script: echo "1" && sleep 120
+    - stage: test3
+      script: echo "1" && sleep 120
+    - stage: test4
+      script: echo "1" && sleep 120
+    - stage: test5
+      script: echo "1" && sleep 120
+    - stage: test6
+      script: echo "1" && sleep 120
+    - stage: test7
+      script: echo "1" && sleep 120
+    - stage: test8
+      script: echo "1" && sleep 120
+    - stage: test9
+      script: echo "1" && sleep 120
+    - stage: test10
+      script: echo "1" && sleep 120
+    - stage: test11
+      script: echo "1" && sleep 120
+    - stage: test12
+      script: echo "1" && sleep 120
+    - stage: test13
+      script: echo "1" && sleep 120
+    - stage: test14
+      script: echo "1" && sleep 120
+    - stage: test15
+      script: echo "1" && sleep 120
